@@ -53,8 +53,9 @@ hr {
 }
 
 .buttons {
-  width: fit-content;
   margin: auto;
+  width:fit-content;
+  display:block;
 }
 
 
