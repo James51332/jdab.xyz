@@ -1,0 +1,55 @@
+:root {
+  --background-color: rgb(251, 249, 240);
+}
+
+body, html {
+  margin: 0;
+  padding: 0 15px;
+  background-color: var(--background-color);
+
+  font-family: 'Noto Serif JP', serif;
+}
+
+body * {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: auto;
+}
+
+.title {
+  margin: 0.5em 0;
+}
+
+hr {
+  margin: 0.5em 0;
+}
+
+.post a {
+  color: rgb(27, 99, 172);
+}
+
+.post h2 {
+  font-family: 'Poppins', sans-serif;
+  margin: 0.5em 0;
+}
+
+.post p {
+  padding-bottom: 0.5em;
+}
+
+.post img {
+  padding: 0.5em 0;
+}
+
+.footer {
+  margin: auto;
+  width: fit-content;
+}
+
+.github-btn img {
+  border-radius: 50%;
+}
