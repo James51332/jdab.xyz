@@ -1,12 +1,11 @@
 :root {
-  --vegas-gold: #d6ba73;
-  --eton-blue: #087E8B;
-  --middle-grey: #FF5A5F;
-  --dark-byzantium: #C1839F;
+  --off-white: #F5F5F5;
+  --blue: #087E8B;
+  --pink: #C1839F;
 
-  --background-color: #F5F5F5;
-  --heading-color: var(--eton-blue);
-  --highlight-color: var(--dark-byzantium);
+  --background-color: var(--off-white);
+  --heading-color: var(--blue);
+  --highlight-color: var(--pink);
 }
 
 ::selection {
@@ -18,7 +17,7 @@
 
 body, html {
   margin: 0;
-  padding: 0 15px 10px 15px;
+  padding: 0 15px 15px 15px;
   background-color: var(--background-color);
   color: #000;
 
@@ -30,20 +29,9 @@ body * {
   margin: 0;
 }
 
-nav {
-  padding: 0;
-  margin: 0;
-}
-
 .container {
   max-width: 600px;
   margin: auto;
-}
-
-.title {
-  margin: 0.5em 0;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 300;
 }
 
 hr {
@@ -54,13 +42,18 @@ a {
   color: var(--heading-color);
 }
 
-h2, h1 {
+h1, h2, h3 {
+  color: var(--heading-color);
   font-family: 'Poppins', sans-serif;
   margin: 0.5em 0;
   font-weight: 300;
 }
 
- p {
+.title a {
+  text-decoration: none;
+}
+
+p {
   text-align: justify;
   padding: 0.4em 0;
 }
@@ -75,27 +68,26 @@ h2, h1 {
   justify-content: center;
 }
 
-.github-btn, .youtube-btn {
+.github-btn, .youtube-btn, .discord-btn {
   border-radius: 50%;
   display:inline-flex;
   transition: 300ms background-color ease-in-out;
-  width:40px;
-  height:40px;
+  height: 40px;
   margin:0px 3px;
+}
+
+.github-btn img, .youtube-btn img, .discord-btn img {
+  border-radius: 50%;
 }
 
 .github-btn:hover {
   background-color: rgb(22, 20, 21);
 }
 
-.github-btn img {
-  border-radius: 50%;
-}
-
 .youtube-btn:hover {
   background-color: rgb(255, 0, 0);
 }
 
-.youtube-btn img {
-  border-radius: 50%;
+.discord-btn:hover {
+  background-color: #7289DA;
 }

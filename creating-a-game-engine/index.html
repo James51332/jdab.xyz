@@ -14,7 +14,7 @@
 		<div class="container">
 			
 			<nav>
-				<h2 class="title">Papaya</h2>
+				<h2 class="title"><a href="img/../">Papaya</a></h2>
 			</nav>
 
 			<hr>
@@ -42,16 +42,32 @@
         using Xcode. This was actually a huge milestone because it meant I was beginning to understand the vast world
         of C++ and how it worked; I began to learn more about compilers and linkers and the general C++ ecosystem.
       </p><p>
-        Next on the list is <a href="https://github.com/James51332/NeptuneGL">NeptuneGL</a> and Neptune. The idea I had here was that I would create a library for platform specific API
-        calls (<a href="https://github.com/James51332/NeptuneGL">NeptuneGL</a>), and one for everything else (Neptune). Surpisingly, <a href="https://github.com/James51332/NeptuneGL">NeptuneGL</a> is actually a rather nice repository. It was heavily
-        based off of <a href="https://www.glfw.org">GLFW</a> but when I wrote the code I understood what I was doing. Neptune is where this project
-        falls apart. This project taught me why it's important to plan ahead when I work on a large project. I designed the system with an XNA/Monogame
-        style but I kept changing the API. I still didn't have a great understanding of the features of a game engines at this point so I didn't
-        really know what to expect.
+        Next on the list is <a href="https://github.com/James51332/NeptuneGL">NeptuneGL</a> and Neptune. The idea I had here was that \
+        I would create a library for platform specific API calls (<a href="https://github.com/James51332/NeptuneGL">NeptuneGL</a>), 
+        and one for everything else (Neptune).  Surpisingly, <a href="https://github.com/James51332/NeptuneGL">NeptuneGL</a> is 
+        actually a rather nice repository. It was heavily based off of <a href="https://www.glfw.org">GLFW</a>, 
+        but when I wrote the code I understood what I was doing. I also learned more about build systems and wrote a 
+        Makefile to compile the libary. Neptune is where this project falls apart. This project taught me why 
+        it's important to plan ahead when I work on a large project. I designed the system with the intentions
+        to create an XNA/Monogame style framework but the API was clunky and not well though out. I still didn't have a great 
+        understanding of the features of a game engines at this point and my design reflected that.
       </p><p>
-        The final failure is <a href="https://github.com/James51332/Apollo">Apollo</a>. I had accept defeat and cloned Hazel Engine again,
-        just trying to grasp design concepts. I was still too lazy at this point to read a paper or learn about game engine architecture.
-        I wasn't proud of it, and I didn't learn much, so it's another failure
+        The final failure is <a href="https://github.com/James51332/Apollo">Apollo</a>. I had accepted defeat and cloned Hazel Engine again,
+        just trying to grasp the design techniques needed to build a game engine. I was still too lazy at this point to 
+        read a paper or learn about game engine architecture.
+        I wasn't proud of it, and I didn't learn much, so it's another failure.
+      </p>
+
+      <h2 class="heading">Papaya</h2>      
+
+      <p>
+        <a href="https://github.com/James51332/Papaya">Papaya</a> is my most recent attempt at a game engine and definitely the most thoroughly thought out. Rather than
+        just blindly copying or writing sloppy code, I've spent time learning about the architecture of modern game
+        engines. Papaya uses <a href="https://premake.github.io">premake</a> to build project files for Xcode, Visual Studio, and GNU Make.
+        It uses native API calls through the OOP Factory (Interface) design pattern to handle platform-specific code.
+        At the time of writing, I'm working on implementing a 2D Batch Renderer. O I'm going to add more formal blog posts from time to time discussing
+        important matters such as threading, rendering, an editor, and other issues I encounter.
+
       </p>
 
 			<hr>
@@ -59,10 +75,13 @@
 			<footer class="footer">
 				<div class="buttons">
 					<div class="github-btn">
-						<a href="https://github.com/James51332"><img src="../img/github-btn.png" width="40px" height="40px"></a>
+						<a href="https://github.com/James51332"><img src="../img/github-btn.png" height="40px"></a>
 					</div>
 					<div class="youtube-btn">
-						<a href="https://www.youtube.com/channel/UCK19Hf5uA-Io-iF8f5G7ivA"><img src="../img/youtube-btn.png" width="40px" height="40px"></a>
+						<a href="https://www.youtube.com/channel/UCK19Hf5uA-Io-iF8f5G7ivA"><img src="../img/youtube-btn.png" height="40px"></a>
+					</div>
+          <div class="discord-btn">
+						<a href="https://discord.gg/xZJRTQmJ"><img src="../img/discord-btn.png"height="40px"></a>
 					</div>
 				</div>
 			</footer>
