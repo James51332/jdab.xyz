@@ -1,7 +1,12 @@
 :root {
-  --background-color: rgb(251, 249, 240);
-  --heading-color: rgb(27, 99, 172);
-  --highlight-color: #eea616;
+  --vegas-gold: #d6ba73;
+  --eton-blue: #087E8B;
+  --middle-grey: #FF5A5F;
+  --dark-byzantium: #C1839F;
+
+  --background-color: #F5F5F5;
+  --heading-color: var(--eton-blue);
+  --highlight-color: var(--dark-byzantium);
 }
 
 ::selection {
@@ -15,11 +20,17 @@ body, html {
   margin: 0;
   padding: 0 15px 10px 15px;
   background-color: var(--background-color);
+  color: #000;
 
   font-family: 'Noto Serif JP', serif;
 }
 
 body * {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
   padding: 0;
   margin: 0;
 }
@@ -39,18 +50,19 @@ hr {
   margin: 0.5em 0;
 }
 
-.post a {
+a {
   color: var(--heading-color);
 }
 
-.post h2 {
+h2, h1 {
   font-family: 'Poppins', sans-serif;
   margin: 0.5em 0;
   font-weight: 300;
 }
 
-.post p {
-  padding-bottom: 0.5em;
+ p {
+  text-align: justify;
+  padding: 0.4em 0;
 }
 
 .post img {
