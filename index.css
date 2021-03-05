@@ -1,10 +1,19 @@
 :root {
   --background-color: rgb(251, 249, 240);
+  --heading-color: rgb(27, 99, 172);
+  --highlight-color: #eea616;
+}
+
+::selection {
+  background: var(--highlight-color); /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: var(--highlight-color); /* Gecko Browsers */
 }
 
 body, html {
   margin: 0;
-  padding: 0 15px;
+  padding: 0 15px 10px 15px;
   background-color: var(--background-color);
 
   font-family: 'Noto Serif JP', serif;
@@ -31,7 +40,7 @@ hr {
 }
 
 .post a {
-  color: rgb(27, 99, 172);
+  color: var(--heading-color);
 }
 
 .post h2 {
@@ -48,16 +57,11 @@ hr {
   padding: 0.5em 0;
 }
 
-.footer {
-
-}
-
 .buttons {
   margin: auto;
   display: flex;
   justify-content: center;
 }
-
 
 .github-btn, .youtube-btn {
   border-radius: 50%;
